@@ -1,10 +1,17 @@
-/* Application de la police Nunito Sans au corps du texte */
-body {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 400; /* Poids par défaut */
+/* Appliquer la police et la taille de police globalement */
+*,
+*::before,
+*::after {
+  font-family: "Nunito Sans", sans-serif !important; /* Force l'application de la police */
+  font-weight: 400 !important; /* Force le poids de police de 400 */
 }
 
-/* Application de la graisse 600 pour les titres */
+body {
+  font-family: "Nunito Sans", sans-serif !important;
+  font-weight: 400 !important; /* Texte normal */
+}
+
+/* Appliquer le poids 600 pour tous les titres */
 h1,
 h2,
 h3,
@@ -12,5 +19,5 @@ h4,
 h5,
 h6,
 strong {
-  font-weight: 600;
+  font-weight: 600 !important; /* Poids plus lourd pour les titres */
 }

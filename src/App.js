@@ -1,6 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
 import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Accueil from "./pages/Accueil";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import Services from "./pages/Services";
+import Realisations from "./pages/Realisations";
+import MentionsLegales from "./pages/MentionsLegales";
 
 function App() {
   return (
@@ -8,13 +15,14 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<div>Accueil</div>} />
+        <Route path="/" element={<Accueil />} />
         <Route path="/services" element={<div>Services</div>} />
-        <Route path="/realisation" element={<div>Réalisations</div>} />
+        <Route path="/realisations" element={<div>Realisation</div>} />
         <Route path="/blog" element={<div>Blog</div>} />
         <Route path="/contact" element={<div>Contact</div>} />
         <Route path="/mentions-legales" element={<div>Mentions légales</div>} />
       </Routes>
+      <Footer />
     </>
   );
 }

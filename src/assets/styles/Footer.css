@@ -1,0 +1,71 @@
+/* Footer global */
+.footer {
+  background-color: #343a40; /* Fond sombre */
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Liste d'éléments dans le footer */
+.footer-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+/* Liens dans le footer */
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #f1f1f1; /* Un léger effet de survol */
+}
+
+/* Icônes des réseaux sociaux */
+.footer-social {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-social-icon {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icon:hover {
+  color: #007bff; /* Couleur au survol */
+}
+
+/* Copyright */
+footer p {
+  font-size: 0.9rem;
+  color: #dcdcdc;
+  margin-top: 20px;
+}
+
+/* Responsivité - Adapter le footer pour mobile */
+@media (max-width: 767px) {
+  .footer h5 {
+    font-size: 1.2rem;
+  }
+
+  .footer-list li {
+    font-size: 1rem;
+  }
+
+  .footer-social-icon {
+    font-size: 20px;
+  }
+}
