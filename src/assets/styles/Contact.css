@@ -1,0 +1,115 @@
+.contact-section {
+  padding: 40px 0;
+  background-image: url("../images/contact-bg.jpg"); /* Image de fond */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay bleu transparent */
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 105, 255, 0.5); /* Fond bleu transparent */
+  z-index: 0; /* Assurez-vous que l'overlay soit derrière le contenu */
+}
+
+.contact-block {
+  display: flex; /* Utilisation de Flexbox */
+  gap: 20px; /* Espacement entre les colonnes */
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 1200px; /* Largeur max modifiée pour un meilleur rendu */
+  margin: 0 auto; /* Centrer horizontalement */
+  flex-wrap: wrap; /* Permet à l'élément de se réorganiser si besoin */
+}
+
+/* Contenu principal */
+.contact-content {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contact-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.blue-line {
+  height: 2px;
+  background-color: rgba(0, 105, 255, 0.5);
+  width: 100px;
+  margin: 10px auto;
+}
+
+/* Formulaire à gauche */
+.contact-form {
+  flex: 1; /* Prend une portion égale */
+  padding-right: 20px; /* Un petit espacement pour ne pas que les deux sections se touchent */
+  min-width: 300px; /* Empêche le formulaire de devenir trop petit */
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+/* Coordonnées à droite */
+.contact-info {
+  flex: 1; /* Prend une portion égale */
+  padding-left: 20px; /* Un petit espacement pour ne pas que les deux sections se touchent */
+  min-width: 300px; /* Empêche les coordonnées de devenir trop petites */
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+}
+
+.contact-info h4 {
+  margin-bottom: 10px;
+}
+
+.google-map iframe {
+  border-radius: 8px;
+}
+
+/* Réajustement pour les petits écrans */
+@media (max-width: 768px) {
+  .contact-block {
+    flex-direction: column; /* Empiler les éléments */
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: unset; /* Enlever la largeur flexible sur les petits écrans */
+    margin: 0;
+  }
+}
