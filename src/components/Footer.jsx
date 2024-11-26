@@ -109,8 +109,9 @@ function Footer() {
                       icon={faChevronRight}
                       size="xs"
                       className="chevron-right"
-                    />{" "}
-                    Mentions légales{" "}
+                    />
+                    {""}
+                    Mentions légales{""}
                   </Link>
                 </li>
               </ul>
