@@ -74,7 +74,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <a href="/about">
+                  <a href="#about">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"

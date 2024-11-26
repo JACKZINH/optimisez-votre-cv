@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/styles/Accueil.css";
+import About from "../components/About";
 
 const Accueil = () => {
   return (
@@ -13,6 +14,7 @@ const Accueil = () => {
           </a>
         </div>
       </div>
+      <About />
     </div>
   );
 };
