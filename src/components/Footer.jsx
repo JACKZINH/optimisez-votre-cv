@@ -121,7 +121,7 @@ function Footer() {
               <h5 className="footer-title">Mes dernières réalisations</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a href="#">
+                  <a href="/realisations">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
@@ -131,7 +131,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/realisations">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
@@ -141,7 +141,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/realisations">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
@@ -158,7 +158,7 @@ function Footer() {
               <h5 className="footer-title">Mes derniers articles</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a href="#">
+                  <a href="/blog">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
@@ -168,7 +168,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/blog">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
@@ -178,7 +178,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="blog">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
