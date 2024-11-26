@@ -1,0 +1,27 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: var(--couleur-secondaire);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-item .active {
+  color: var(--couleur-primaire);
+}
+
+.collapse.show {
+  background-color: inherit; /* Hérite de la couleur de fond du header */
+  padding: 0; /* Pas de marge ou padding */
+}
+
+.collapse.show .nav-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
