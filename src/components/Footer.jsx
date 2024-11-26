@@ -1,96 +1,201 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Pour les liens internes dans l'application React
-import "../assets/styles/Footer.css"; // Import du fichier CSS spécifique pour le footer
+import { Link } from "react-router-dom";
+import "../assets/styles/Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
-    <footer className="footer bg-dark text-white py-5">
-      <div className="container">
-        <div className="row">
-          {/* Section 1 : Informations de contact */}
-          <div className="col-md-4">
-            <h5>Contact</h5>
-            <ul className="footer-list">
-              <li>
-                <strong>Adresse : </strong> 123 rue de l'Exemple, Paris, France
-              </li>
-              <li>
-                <strong>Téléphone : </strong> +33 1 23 45 67 89
-              </li>
-              <li>
-                <strong>Email : </strong> contact@exemple.com
-              </li>
-            </ul>
-          </div>
+    <footer>
+      {/* Partie supérieure - Gris clair */}
+      <div className="footer-main">
+        <div className="container py-4">
+          <div className="row">
+            {/* Section Contact */}
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h5 className="footer-title">John Doe</h5>
+              <p>40 Rue Laure Diebold</p>
+              <p>69009 Lyon, France</p>
+              <p>Téléphone : 06 20 30 40 50</p>
+              <div className="footer-socials">
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub">
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    size="lg"
+                    className="footer-icon"
+                  />
+                </a>
+                <a
+                  href="https://x.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter">
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    size="lg"
+                    className="footer-icon"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn">
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    size="lg"
+                    className="footer-icon"
+                  />
+                </a>
+              </div>
+            </div>
 
-          {/* Section 2 : Liens de navigation supplémentaires */}
-          <div className="col-md-4">
-            <h5>Liens rapides</h5>
-            <ul className="footer-list">
-              <li>
-                <Link to="/about" className="footer-link">
-                  À propos
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="footer-link">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="footer-link">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="footer-link">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+            {/* Section Liens utiles */}
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h5 className="footer-title">Liens utiles</h5>
+              <ul className="list-unstyled">
+                <li>
+                  <Link to="/">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />
+                    Accueil
+                  </Link>
+                </li>
+                <li>
+                  <a href="/about">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />
+                    À propos
+                  </a>
+                </li>
+                <li>
+                  <Link to="/services">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />
+                    Me contacter
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/mentions-legales">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />{" "}
+                    Mentions légales{" "}
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-          {/* Section 3 : Réseaux sociaux */}
-          <div className="col-md-4">
-            <h5>Suivez-nous</h5>
-            <ul className="footer-social">
-              <li>
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer-social-icon">
-                  <i className="fab fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer-social-icon">
-                  <i className="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer-social-icon">
-                  <i className="fab fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
+            {/* Section Réalisations */}
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h5 className="footer-title">Mes dernières réalisations</h5>
+              <ul className="list-unstyled">
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />
+                    Fresh food
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />
+                    Restaurant Akira
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />
+                    Espace bien-être
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Section Articles */}
+            <div className="col-lg-3 col-md-6 mb-4">
+              <h5 className="footer-title">Mes derniers articles</h5>
+              <ul className="list-unstyled">
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />
+                    Coder son site en HTML/CSS
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />
+                    Vendre ses produits sur le web
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      size="xs"
+                      className="chevron-right"
+                    />
+                    Se positionner sur Google
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Section 4 : Copyright */}
-        <div className="row">
-          <div className="col text-center mt-4">
-            <p>&copy; 2024 John Doe - Tous droits réservés</p>
-          </div>
-        </div>
+      {/* Partie inférieure - Sombre */}
+      <div className="footer-bottom bg-dark text-center text-white py-3">
+        <p>© Designed by John Doe</p>
       </div>
     </footer>
   );
