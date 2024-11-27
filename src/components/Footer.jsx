@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
@@ -10,6 +10,29 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
+  // État pour gérer l'affichage du bouton
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  // Vérifie la position de défilement
+  const checkScrollPosition = () => {
+    const isAtBottom =
+      window.innerHeight + window.scrollY >=
+      document.documentElement.scrollHeight - 2;
+    setShowScrollTop(isAtBottom);
+  };
+
+  // Ecouteur d'événements pour le défilement
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollPosition);
+    return () => {
+      window.removeEventListener("scroll", checkScrollPosition);
+    };
+  }, []);
+
+  // Fonction pour revenir en haut
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <footer>
       {/* Partie supérieure - Gris clair */}
@@ -19,8 +42,8 @@ function Footer() {
             {/* Section Contact */}
             <div className="col-lg-3 col-md-6 mb-4">
               <h5 className="footer-title">John Doe</h5>
-              <p>40 Rue Laure Diebold</p>
-              <p>69009 Lyon, France</p>
+              <p className="mb-0">40 Rue Laure Diebold</p>
+              <p className="mb-0">69009 Lyon, France</p>
               <p>Téléphone : 06 20 30 40 50</p>
               <div className="footer-socials">
                 <a
@@ -196,6 +219,15 @@ function Footer() {
 
       {/* Partie inférieure - Sombre */}
       <div className="footer-bottom bg-dark text-center text-white py-3">
+        {/* Bouton retour en haut */}
+        {showScrollTop && (
+          <button
+            className="scroll-top-btn"
+            onClick={scrollToTop}
+            aria-label="Retour en haut">
+            <FontAwesomeIcon icon={faChevronUp} />
+          </button>
+        )}
         <p>© Designed by John Doe</p>
       </div>
     </footer>

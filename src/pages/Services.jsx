@@ -13,7 +13,7 @@ function Services() {
       {/* Bannière  */}
       <div className="banner"></div>
       {/* Section Services */}
-      <div className="container py-5">
+      <div className=" container py-5">
         <h2 className="text-center mb-3 fs-1">MON OFFRE DE SERVICES</h2>
         <p className="text-center mb-3">
           Voici les prestations sur lesquelles je peux intervenir.

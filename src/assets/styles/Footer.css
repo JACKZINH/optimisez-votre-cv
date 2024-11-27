@@ -1,10 +1,6 @@
 footer a {
-  text-decoration: none !important; /* Supprime le soulignement */
-  color: inherit; /* Utilise la couleur définie pour le texte du footer */
-}
-
-footer a:hover {
-  color: var(--couleur-primaire); /* Change la couleur au survol si souhaité */
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Partie principale (gris clair) */
@@ -24,7 +20,7 @@ footer a:hover {
 
 /* Partie inférieure (sombre) */
 .footer-bottom {
-  background-color: #2c2c2c; /* Couleur identique au header */
+  background-color: #2c2c2c;
   font-size: 0.9rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -46,4 +42,23 @@ footer a:hover {
 .chevron-right {
   margin-right: 0.3rem;
   color: #0d6efd;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  border-radius: 30%;
+  padding: 8px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  background-color: #298eff;
 }
