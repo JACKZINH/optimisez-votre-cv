@@ -9,7 +9,7 @@
   color: #1e1e1e;
 }
 
-h2.card-title::after {
+.about-section h2.card-title::after {
   content: "";
   display: block;
   width: 100%;

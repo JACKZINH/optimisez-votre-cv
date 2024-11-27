@@ -9,7 +9,7 @@ const Accueil = () => {
         <div className="overlay">
           <h1 className="hero-title">Bonjour, je suis John Doe</h1>
           <h2 className="hero-subtitle">Développeur web full stack</h2>
-          <a href="#about" className="btn btn-primary">
+          <a href="/#about" className="btn btn-primary">
             En savoir plus
           </a>
         </div>
