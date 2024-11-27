@@ -1,0 +1,7 @@
+# Activer le moteur de réécriture
+RewriteEngine On
+
+# Forcer toutes les requêtes vers index.html pour React Router
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
