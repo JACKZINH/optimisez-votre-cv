@@ -145,34 +145,34 @@ function Footer() {
               <h5 className="footer-title">Mes dernières réalisations</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a href="/realisations">
+                  <Link to="/realisations">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
                       className="chevron-right"
                     />
                     Fresh food
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/realisations">
+                  <Link to="/realisations">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
                       className="chevron-right"
                     />
                     Restaurant Akira
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/realisations">
+                  <Link to="/realisations">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
                       className="chevron-right"
                     />
                     Espace bien-être
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -182,34 +182,34 @@ function Footer() {
               <h5 className="footer-title">Mes derniers articles</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a href="/blog">
+                  <Link to="/blog">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
                       className="chevron-right"
                     />
                     Coder son site en HTML/CSS
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/blog">
+                  <Link to="/blog">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
                       className="chevron-right"
                     />
                     Vendre ses produits sur le web
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="blog">
+                  <Link to="/blog">
                     <FontAwesomeIcon
                       icon={faChevronRight}
                       size="xs"
                       className="chevron-right"
                     />
                     Se positionner sur Google
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
