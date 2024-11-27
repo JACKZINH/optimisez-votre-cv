@@ -39,7 +39,7 @@ const About = () => {
                   src={AboutImage}
                   className="img-fluid rounded"
                   alt="Profil développeur"
-                  style={{ maxHeight: "250px" }} // Taille maximale pour garder l'image proportionnée
+                  style={{ maxHeight: "250px" }}
                 />
               </div>
               <h2>Mes compétences</h2>

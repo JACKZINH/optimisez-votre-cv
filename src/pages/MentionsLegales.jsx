@@ -8,10 +8,16 @@ import {
   faLocationDot,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet";
 
 const MentionsLegales = () => {
   return (
     <section className="mentions-legales-page" id="mentions-legales">
+      {/* Ajouter la configuration meta pour empêcher l'indexation */}
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Mentions Légales</title>
+      </Helmet>
       <div className="container">
         <h1 className="text-center mt-5 ">MENTIONS LEGALES</h1>
         <div className="separator-line mb-5 mt-3"></div>

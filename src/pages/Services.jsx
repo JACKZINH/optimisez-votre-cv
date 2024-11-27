@@ -6,10 +6,23 @@ import {
   faFileCode,
   faMagnifyingGlassDollar,
 } from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet";
 
 function Services() {
   return (
     <div className="services-container">
+      <Helmet>
+        <title>Mes Services | Développeur Web à Lyon</title>
+        <meta
+          name="description"
+          content="Découvrez mes services en UX design, développement web et référencement SEO. J'accompagne vos projets pour offrir des solutions sur mesure."
+        />
+        <meta
+          name="keywords"
+          content="services, développement web, UX design, référencement, SEO, création de sites web, optimisation SEO, Lyon"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Bannière  */}
       <div className="banner"></div>
       {/* Section Services */}

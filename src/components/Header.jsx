@@ -13,7 +13,7 @@ function Header() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           {/* Logo textuel */}
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand fw-bold fs-2" to="/">
             JOHN DOE
           </Link>
 

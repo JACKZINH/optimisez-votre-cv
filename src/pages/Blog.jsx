@@ -7,6 +7,7 @@ import Google from "../assets/images/blog/google.jpg";
 import Screens from "../assets/images/blog/screens.jpg";
 import Seo from "../assets/images/blog/seo.jpg";
 import Technos from "../assets/images/blog/technos.png";
+import { Helmet } from "react-helmet";
 
 function Blog() {
   const articles = [
@@ -68,6 +69,15 @@ function Blog() {
 
   return (
     <div>
+      <Helmet>
+        <title>Blog | Articles sur le développement web</title>
+        <meta
+          name="description"
+          content="Retrouvez ici des articles intéressants sur le développement web, incluant des sujets comme le HTML, le CSS, le référencement et bien plus."
+        />
+        {/* Ajout d'une balise robots pour contrôler l'indexation */}
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Bannière  */}
       <div className="banner"></div>
       {/* Section Blog */}

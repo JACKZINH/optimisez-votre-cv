@@ -1,15 +1,9 @@
 .nav-link {
   text-transform: uppercase;
-  color: var(--couleur-secondaire);
-  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
   color: rgba(255, 255, 255, 0.8);
-}
-
-.nav-item .active {
-  color: var(--couleur-primaire);
 }
 
 .collapse.show {
@@ -19,9 +13,4 @@
 
 .collapse.show .nav-link:hover {
   color: rgba(255, 255, 255, 0.8);
-}
-
-.navbar-brand {
-  font-weight: bold !important;
-  font-size: 1.4rem !important;
 }

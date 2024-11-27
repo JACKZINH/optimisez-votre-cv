@@ -1,6 +1,6 @@
 .about-section {
   padding: 5rem 0;
-  background-color: #f9f9f9; /* Couleur de fond */
+  background-color: #f9f9f9;
 }
 
 .card-title {
@@ -34,13 +34,13 @@
 }
 
 .progress {
-  height: 1rem; /* Ajuste la hauteur des progress bars */
+  height: 1rem;
   border-radius: 0.5rem;
 }
 
 img.img-fluid {
-  max-width: 100%; /* Rendre l'image responsive */
+  max-width: 100%;
   width: 100%;
   height: auto;
-  border-radius: 0.5rem; /* Ajouter des coins arrondis */
+  border-radius: 0.5rem;
 }

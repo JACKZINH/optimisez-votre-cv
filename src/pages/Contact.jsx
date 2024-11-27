@@ -5,10 +5,20 @@ import {
   faMobileScreen,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet";
 
 function Contact() {
   return (
     <section className="contact-section" id="contact">
+      <Helmet>
+        <title>Contact | Me contacter pour une collaboration</title>
+        <meta
+          name="description"
+          content="Pour toute demande d'entretien ou collaboration, vous pouvez me contacter directement via ce formulaire ou en utilisant mes coordonnées."
+        />
+        {/* Ajout d'une balise robots pour contrôler l'indexation */}
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div
         className="card shadow mt-5 mb-5 mx-auto p-5 "
         style={{ maxWidth: "1600px" }}>

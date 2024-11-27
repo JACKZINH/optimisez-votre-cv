@@ -4,6 +4,7 @@ import "../assets/styles/Realisations.css";
 import Food from "../assets/images/portfolio/fresh-food.jpg";
 import Espace from "../assets/images/portfolio/espace-bien-etre.jpg";
 import Restau from "../assets/images/portfolio/restaurant-japonais.jpg";
+import { Helmet } from "react-helmet";
 
 function Realisations() {
   const projets = [
@@ -35,9 +36,21 @@ function Realisations() {
   ];
   return (
     <div>
+      <Helmet>
+        <title>Mes réalisations | Portfolio de John Doe</title>
+        <meta
+          name="description"
+          content="Découvrez quelques-unes de mes réalisations en développement web : sites vitrines, e-commerce et projets sur mesure."
+        />
+        <meta
+          name="keywords"
+          content="portfolio, réalisations, développement web, sites vitrines, e-commerce, PHP, MySQL, WordPress, HTML, CSS"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Bannière  */}
       <div className="banner"></div>
-      {/* Section Projets */}
+      {/* Section Realisations */}
       <div className="container py-5">
         <h2 className="text-center mb-3 fs-1">PORTFOLIO</h2>
         <p className="text-center mb-3">

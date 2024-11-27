@@ -17,10 +17,3 @@
     background-image: url("../images/banner-mobile.jpg"); /* Image pour mobile */
   }
 }
-
-.separator-line {
-  width: 300px;
-  height: 4px;
-  background-color: #007bff;
-  margin: 0 auto;
-}

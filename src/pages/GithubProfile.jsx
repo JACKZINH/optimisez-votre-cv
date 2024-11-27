@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../assets/styles/GithubProfile.css";
+import { Helmet } from "react-helmet";
 
 // Composant pour afficher les informations du profil
 const ProfileInfo = ({ profile }) => {
@@ -70,6 +71,19 @@ const GithubProfile = () => {
 
   return (
     <div className="github-profile-page">
+      <Helmet>
+        <title>Profil GitHub de John Doe</title>
+        <meta
+          name="description"
+          content="Découvrez le profil GitHub de John Doe, développeur web. Retrouvez ses informations, ses abonnés, ses abonnements et ses repositories."
+        />
+        <meta
+          name="keywords"
+          content="GitHub, profil GitHub, développeur web, John Doe, repositories, abonnés"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       <h1>Github user</h1>
       {loading && <p>Chargement des données...</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}

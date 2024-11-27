@@ -228,7 +228,7 @@ function Footer() {
             <FontAwesomeIcon icon={faChevronUp} />
           </button>
         )}
-        <p>© Designed by John Doe</p>
+        <p className="text-white">© Designed by John Doe</p>
       </div>
     </footer>
   );
